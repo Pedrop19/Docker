@@ -1,8 +1,0 @@
-FROM tomcat:8.0-alpine
-LABEL maintainer="prlazaron01@iesalbarregas.es"
-
-ADD /CRUD.war /etc/docker/war/LazaroNPCRUD-1.0-SNAPSHOT.war
-
-EXPOSE 8080
-
-CMD ["catalina.sh", "run"]
