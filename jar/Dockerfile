@@ -2,10 +2,9 @@
 FROM openjdk:11-jdk
 LABEL maintainer="prlazaron01@iesalbarregas.es"
 
-WORKDIR /app
-
+WORKDIR app/
 EXPOSE 8010
 
-COPY 
+COPY sample.jar app/sample.jar
 
-CMD 
+CMD ["java","-jar","/opt/demo.jar"]
